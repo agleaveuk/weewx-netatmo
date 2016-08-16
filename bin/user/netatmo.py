@@ -70,7 +70,7 @@ def logerr(msg):
 def loader(config_dict, engine):
     return NetatmoDriver(**config_dict[DRIVER_NAME])
 
-def confeditor_loader(config_dict):
+def confeditor_loader():
     return NetatmoConfEditor()
 
 
@@ -259,7 +259,7 @@ class CloudClient(Collector):
     """
 
     # endpoints for the cloud queries
-    NETATMO_URL = 'https://api.netatmo.net'
+    NETATMO_URL = 'https://api.netatmo.com'
     AUTH_URL = '/oauth2/token'
     DATA_URL = '/api/getstationsdata'
 
